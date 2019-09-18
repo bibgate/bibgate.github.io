@@ -1,0 +1,23 @@
+nav {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;*/
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+
+    div {
+        height: 330px;
+        width: 220px;
+    }
+}
+
+.box:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }

@@ -1,0 +1,32 @@
+@import "./variables";
+@import "./fonts";
+@import "./header";
+@import "./nav";
+@import "./footer";
+@import "./mixins";
+@import "./keyframes";
+
+body {
+    font: 100%;
+}
+
+.next {
+    display: flex;
+    border: 1px solid;
+    background-color: $hfColor;
+    border-radius: 10px;
+    color: $hfTextColor;
+    width: 30%;
+    margin: 30px auto;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+
+    p {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        animation: typewriter 4s steps(44) infinite normal both, blinkTextCursor 500ms steps(44) infinite normal;
+    }
+}

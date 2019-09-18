@@ -1,0 +1,17 @@
+
+footer {
+    .push {
+ 	margin-right: auto;
+    }
+
+    a{
+        color: $hfTextColor;
+        text-decoration: none;
+        font-weight: normal;
+    }
+    @extend header;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 10px;
+
+   }

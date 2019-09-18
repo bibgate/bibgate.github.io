@@ -1,0 +1,14 @@
+@mixin headerFooter {
+    display: flex;
+    justify-content: center;
+    font-family: $hfFonts;
+    font-size: 3rem;
+    font-weight: bolder;
+    background-color: $hfColor;
+    color: $hfTextColor;
+    margin-top: 20px;
+}
+
+header {
+    @include headerFooter;
+}
