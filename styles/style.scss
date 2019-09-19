@@ -1,10 +1,10 @@
-@import "./variables";
-@import "./fonts";
-@import "./header";
-@import "./nav";
-@import "./footer";
-@import "./mixins";
-@import "./keyframes";
+@import "./partials/variables";
+@import "./partials/fonts";
+@import "./partials/header";
+@import "./partials/nav";
+@import "./partials/footer";
+@import "./partials/mixins";
+@import "./partials/keyframes";
 
 body {
     font: 100%;
