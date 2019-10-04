@@ -17,13 +17,14 @@ body {
     border-radius: 10px;
     color: $hfTextColor;
     width: 30%;
-    margin: 30px auto;
+    margin: 20px auto;
     align-items: center;
     justify-content: center;
-    padding: 5px;
+    padding: 3px;
         
         p {
             position: relative;
+            margin-top: 0.6em;
             overflow: hidden;
             text-align: center;
             white-space: nowrap;
