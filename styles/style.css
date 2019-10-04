@@ -62,6 +62,7 @@ nav {
   margin: 20px;
   -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.5);
           box-shadow: 0 0 10px rgba(202, 81, 196, 0.5);
+  text-align: center;
 }
 
 .box:hover {
