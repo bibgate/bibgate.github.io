@@ -1,3 +1,5 @@
+@import "./mixins";
+
 .navPad {
     width: 100%;
     display: flex;
@@ -37,4 +39,78 @@ nav {
 .box:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+}
+
+//=======BOX BACKGROUND COLORS
+.bg-box1 {
+    background-color: #FCDFDB;
+}
+
+.bg-box2 {
+    background-color: #FFF5FE;
+}
+
+.bg-box3 {
+    background-color: #F9F9F9;
+}
+
+.bg-box4 {
+    background-color: #FDFFFD;
+}
+
+//=======CUSTOM FONTS NAVIGATION
+.note {
+    font-family: 'Devonshire', cursive, sans-serif;
+    font-size: 1.5rem;
+    color: #492026;
+}
+
+.menu1 {
+    font-family: 'Kalam', cursive, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #492026;
+}
+
+.chic {
+    font-family: 'Croissant one', cursive, sans-serif;
+    font-size: 1rem;
+
+    @include text-gradient(right, blue, orange);
+}
+
+.menu2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #C77412;
+}
+
+.delice {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 1.5rem;
+
+    @include text-gradient(right, rgb(46, 139, 170), blue);
+}
+
+.menu3 {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    font-size: 2em;
+
+    @include text-gradient(right, rgb(68, 185, 224), blue);
+}
+
+.palette {
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    font-size: 1.5rem;
+
+    @include text-gradient(right, rgb(108, 238, 173), green);
+}
+
+.menu4 {
+    font-family: 'Schoolbell', cursive, sans-serif;
+    font-size: 2rem;
+
+    @include text-gradient(right, rgb(108, 238, 173), green);
 }
