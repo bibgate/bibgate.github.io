@@ -16,6 +16,12 @@ nav {
     flex-flow: row wrap;
     padding: 10px;
 
+    @include breakpoint-phone {
+        width: 100%;
+        flex-flow: column wrap;
+    }
+
+
     // margin-top: 30px;
     // display: grid;
     // grid-template-columns: repeat(2, 50%);
@@ -34,6 +40,9 @@ nav {
     margin: 20px;
     box-shadow: 0 0 10px rgba(202, 81, 196, 0.5);
     text-align: center;
+    @include breakpoint-phone {
+        width: 70%;
+    }
 }
 
 .box:hover {

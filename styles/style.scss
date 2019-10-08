@@ -18,7 +18,9 @@
     align-items: center;
     justify-content: center;
     padding: 3px;
-        
+     @include breakpoint-phone {
+         width: 50%;
+     }  
         p {
             position: relative;
             margin-top: 0.6em;
