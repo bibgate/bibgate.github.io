@@ -18,7 +18,7 @@
 //=====BREAKPOINTS=====
 
 @mixin breakpoint-phone {
-    @media (max-width: 600px) and (min-width:320px) {
+    @media (max-width: 600px) {
         @content;
     }
 }
