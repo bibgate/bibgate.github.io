@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
 header, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +105,7 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
-.bg-box1 {
+.bg-box1, .menu-note {
   background-color: #FCDFDB;
 }
 
@@ -333,6 +334,95 @@ footer a {
     -webkit-transform: translate(1px, -2px) rotate(-1deg);
             transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Segoe Print', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+table {
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+table thead div {
+  text-align: center;
+}
+
+table td {
+  padding: 5px 70px 5px 70px;
+  text-align: justify;
+}
+
+.mouv-final td {
+  padding: 5px 60px 5px 0;
+}
+
+.menu-note {
+  width: 60%;
+  height: 140vh;
+  -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+          box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.line {
+  margin: 30px;
+  height: 3px;
+  width: 75%;
+  background-color: #492026;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.texte-line {
+  background-color: #FCDFDB;
+  padding: 0 50px 0 50px;
+}
+
+.flotte {
+  float: left;
 }
 
 .next {

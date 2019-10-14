@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
+
+//======STYLES PAGE NOTE ENCHANTEE======
+
+main {
+    width: 100%;
+
+    @include flexCenter;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Segoe Print', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+
+    thead {
+        div {
+            text-align: center;
+        }
+    }
+
+    td {
+        padding: 5px 70px 5px 70px;
+        text-align: justify;
+    }
+}
+
+.mouv-final {
+    td {
+        padding: 5px 60px 5px 0;
+    }
+}
+
+.menu-note {
+    width: 60%;
+    height: 140vh;
+    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+    flex-flow: column wrap;
+    text-align: center;
+
+    @include flexCenter;
+
+    @extend .bg-box1;
+}
+
+.line {
+    margin: 30px;
+    height: 3px;
+    width: 75%;
+    background-color: #492026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte-line {
+    background-color: #FCDFDB;
+    padding: 0 50px 0 50px;
+}
+.flotte {
+    float: left;
+}

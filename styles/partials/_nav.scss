@@ -2,16 +2,12 @@
 
 .navPad {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
 }
 
 nav {
     width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     flex-direction: column;
     flex-flow: row wrap;
     padding: 10px;
@@ -35,9 +31,7 @@ a:hover {
     text-decoration: none;
 }
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     height: 50vh;
     width: 30%;
     margin: 20px;

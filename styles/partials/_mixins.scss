@@ -9,6 +9,14 @@
     margin-top: 20px;
 }
 
+// =====FLEXBOX======
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//=====TEXTE DEGRADE=====
 @mixin text-gradient($dir, $from, $to) {
     background: -webkit-linear-gradient($dir, $from, $to);
     -webkit-background-clip: text;
