@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
 header, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,16 +109,16 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
-.bg-box1, .menu-note, .menu-chic {
+.bg-box1, .menu-note {
   background-color: #FCDFDB;
 }
 
-.bg-box2, .menu-chic, .menuchic {
+.bg-box2, .menuchic {
   background-color: #FFF5FE;
 }
 
-.bg-box3 {
-  background-color: #F9F9F9;
+.bg-box3, .menudelice {
+  background-color: #EDEFEF;
 }
 
 .bg-box4 {
@@ -151,7 +154,7 @@ a:hover {
   color: #C77412;
 }
 
-.delice {
+.delice, .papilles-title {
   font-family: 'Dancing Script', cursive, sans-serif;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(right, #2e8baa, blue);
@@ -363,22 +366,22 @@ h3 {
   font-weight: bold;
 }
 
-table, .table-chic {
+table {
   font-family: 'Segoe Print', sans-serif;
   font-size: 0.8rem;
   margin-bottom: 50px;
 }
 
-table thead div, .table-chic thead div {
+table thead div {
   text-align: center;
 }
 
-table td, .table-chic td {
+table td {
   padding: 5px 70px 5px 70px;
   text-align: justify;
 }
 
-table td:last-child, .table-chic td:last-child {
+table td:last-child {
   font-weight: bold;
   font-size: 1rem;
 }
@@ -387,7 +390,7 @@ table td:last-child, .table-chic td:last-child {
   padding: 5px 60px 5px 0;
 }
 
-.menu-note, .menu-chic {
+.menu-note {
   width: 60%;
   height: 140vh;
   -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
@@ -408,7 +411,7 @@ table td:last-child, .table-chic td:last-child {
           align-items: center;
 }
 
-.line, .line-chic {
+.line {
   margin: 30px;
   height: 3px;
   width: 75%;
@@ -442,31 +445,6 @@ table td:last-child, .table-chic td:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.menu-chic {
-  height: 130vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.line-chic {
-  background-color: #FFF5FE;
-}
-
-.table-chic {
-  font-family: 'Roboto Slab', sans-serif;
-}
-
-.tchic td {
-  padding: 5px 80px 5px 20;
 }
 
 .centerow {
@@ -558,6 +536,99 @@ table td:last-child, .table-chic td:last-child {
   background: #100e8f;
   background: -webkit-gradient(linear, left top, right top, from(#100e8f), to(#b993be));
   background: linear-gradient(to right, #100e8f, #b993be);
+}
+
+.row-papilles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 0.9rem;
+}
+
+.row-papilles h3 {
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 1.1rem;
+}
+
+.menudelice {
+  width: 60%;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+          box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+.papilles-title {
+  font-size: 2.5rem;
+}
+
+/* .mise-en-appetit {
+    @include text-gradient(right, blue, orange);
+}
+
+.plaisir {
+    @include text-gradient(right, rgb(88, 88, 177), rgb(231, 31, 218));
+}
+
+.gourmandises {
+    @include text-gradient(right, rgb(185, 147, 190), rgb(16, 14, 143));
+}
+
+.h3-appetit {
+    @extend .mise-en-appetit;
+}
+
+.h3-plaisir {
+    @extend .plaisir;
+}
+
+.h3-gourmandises {
+    @extend .gourmandises;
+} */
+.left-commencer, .right-commencer, .right-continuer, .right-terminer, .left-continuer, .left-terminer {
+  background: blue;
+  background: -webkit-gradient(linear, left top, right top, from(blue), to(#122dc7));
+  background: linear-gradient(to right, blue, #122dc7);
+  -webkit-clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
+          clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
+}
+
+.right-commencer, .right-continuer, .right-terminer {
+  -webkit-clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
+          clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
+}
+
+.left-continuer {
+  background: #0d9cdf;
+  background: -webkit-gradient(linear, left top, right top, from(#0d9cdf), to(#1625f1));
+  background: linear-gradient(to right, #0d9cdf, #1625f1);
+}
+
+.right-continuer {
+  background: #1625f1;
+  background: -webkit-gradient(linear, left top, right top, from(#1625f1), to(#0d9cdf));
+  background: linear-gradient(to right, #1625f1, #0d9cdf);
+}
+
+.left-terminer {
+  background: #0d9cdf;
+  background: -webkit-gradient(linear, left top, right top, from(#0d9cdf), to(#b8d4eb));
+  background: linear-gradient(to right, #0d9cdf, #b8d4eb);
+}
+
+.right-terminer {
+  background: #b8d4eb;
+  background: -webkit-gradient(linear, left top, right top, from(#b8d4eb), to(#0d9cdf));
+  background: linear-gradient(to right, #b8d4eb, #0d9cdf);
 }
 
 .next {
