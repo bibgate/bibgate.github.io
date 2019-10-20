@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
 header, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +13,7 @@ header, footer {
   font-weight: bold;
   background-color: #579C87;
   color: #FDCB46;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 header h1, footer h1 {
@@ -105,11 +106,11 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
-.bg-box1, .menu-note {
+.bg-box1, .menu-note, .menu-chic {
   background-color: #FCDFDB;
 }
 
-.bg-box2 {
+.bg-box2, .menu-chic, .menuchic {
   background-color: #FFF5FE;
 }
 
@@ -135,7 +136,7 @@ a:hover {
   color: #492026;
 }
 
-.chic {
+.chic, .chic-title {
   font-family: 'Croissant one', cursive, sans-serif;
   font-size: 1rem;
   background: -webkit-linear-gradient(right, blue, orange);
@@ -185,7 +186,7 @@ a:hover {
 footer {
   font-size: 1rem;
   height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 10px;
 }
 
@@ -362,26 +363,31 @@ h3 {
   font-weight: bold;
 }
 
-table {
+table, .table-chic {
   font-family: 'Segoe Print', sans-serif;
   font-size: 0.8rem;
   margin-bottom: 50px;
 }
 
-table thead div {
+table thead div, .table-chic thead div {
   text-align: center;
 }
 
-table td {
+table td, .table-chic td {
   padding: 5px 70px 5px 70px;
   text-align: justify;
+}
+
+table td:last-child, .table-chic td:last-child {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .mouv-final td {
   padding: 5px 60px 5px 0;
 }
 
-.menu-note {
+.menu-note, .menu-chic {
   width: 60%;
   height: 140vh;
   -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
@@ -402,7 +408,7 @@ table td {
           align-items: center;
 }
 
-.line {
+.line, .line-chic {
   margin: 30px;
   height: 3px;
   width: 75%;
@@ -436,6 +442,122 @@ table td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-chic {
+  height: 130vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.line-chic {
+  background-color: #FFF5FE;
+}
+
+.table-chic {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.tchic td {
+  padding: 5px 80px 5px 20;
+}
+
+.centerow {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.9rem;
+}
+
+.centerow h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.1rem;
+}
+
+.menuchic {
+  width: 60%;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+          box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+.chic-title {
+  font-size: 1.5rem;
+}
+
+.mise-en-appetit, .h3-appetit {
+  background: -webkit-linear-gradient(right, blue, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plaisir, .h3-plaisir {
+  background: -webkit-linear-gradient(right, #5858b1, #e71fda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gourmandises, .h3-gourmandises {
+  background: -webkit-linear-gradient(right, #b993be, #100e8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left-appetit, .left-plaisir, .left-gourmandises {
+  background: blue;
+  background: -webkit-gradient(linear, left top, right top, from(blue), to(orange));
+  background: linear-gradient(to right, blue, orange);
+  -webkit-clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
+          clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
+}
+
+.right-appetit, .right-plaisir, .right-gourmandises {
+  background: orange;
+  background: -webkit-gradient(linear, left top, right top, from(orange), to(blue));
+  background: linear-gradient(to right, orange, blue);
+  -webkit-clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
+          clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
+}
+
+.left-plaisir {
+  background: #5858b1;
+  background: -webkit-gradient(linear, left top, right top, from(#5858b1), to(#e71fda));
+  background: linear-gradient(to right, #5858b1, #e71fda);
+}
+
+.right-plaisir {
+  background: #e71fda;
+  background: -webkit-gradient(linear, left top, right top, from(#e71fda), to(#5858b1));
+  background: linear-gradient(to right, #e71fda, #5858b1);
+}
+
+.left-gourmandises {
+  background: #b993be;
+  background: -webkit-gradient(linear, left top, right top, from(#b993be), to(#100e8f));
+  background: linear-gradient(to right, #b993be, #100e8f);
+}
+
+.right-gourmandises {
+  background: #100e8f;
+  background: -webkit-gradient(linear, left top, right top, from(#100e8f), to(#b993be));
+  background: linear-gradient(to right, #100e8f, #b993be);
 }
 
 .next {

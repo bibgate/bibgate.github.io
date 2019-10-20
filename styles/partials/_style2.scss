@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
 
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
+
 //======STYLES PAGE NOTE ENCHANTEE======
 
 main {
@@ -35,6 +37,11 @@ table {
     td {
         padding: 5px 70px 5px 70px;
         text-align: justify;
+    }
+
+    td:last-child {
+        font-weight: bold;
+        font-size: 1rem;
     }
 }
 
@@ -74,4 +81,127 @@ table {
 
 .flotte-note {
     @include flexCenter;
+}
+
+//======STYLES PAGE CHIC A LA FRANCAISE======
+
+.menu-chic {
+    @extend .menu-note;
+
+    height: 130vh;
+
+    @include flexCenter;
+
+    @extend .bg-box2;
+}
+
+.line-chic {
+    @extend .line;
+
+    background-color: #FFF5FE;
+}
+
+.table-chic {
+    @extend table;
+
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.tchic {
+    td {
+        padding: 5px 80px 5px 20;
+    }
+}
+
+//======STYLES TEST======
+.centerow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 0.9rem;
+
+    h3 {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 1.1rem;
+    }
+}
+
+.menuchic {
+    width: 60%;
+
+    @extend .bg-box2;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+.chic-title {
+    font-size: 1.5rem;
+
+    @extend .chic;
+}
+
+//-----Styles pour les textes en dégradé-----
+.mise-en-appetit {
+    @include text-gradient(right, blue, orange);
+}
+
+.plaisir {
+    @include text-gradient(right, rgb(88, 88, 177), rgb(231, 31, 218));
+}
+
+.gourmandises {
+    @include text-gradient(right, rgb(185, 147, 190), rgb(16, 14, 143));
+}
+
+.h3-appetit {
+    @extend .mise-en-appetit;
+}
+.h3-plaisir {
+    @extend .plaisir;
+}
+.h3-gourmandises {
+    @extend .gourmandises;
+}
+
+//-----Styles pour les flèches-----
+
+.left-appetit {
+    @include gradient(blue, orange, horizontal);
+
+    clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
+}
+
+.right-appetit {
+    @include gradient(orange, blue, horizontal);
+
+    clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
+}
+
+.left-plaisir {
+    @extend .left-appetit;
+
+    @include gradient(rgb(88, 88, 177), rgb(231, 31, 218), horizontal);
+}
+
+.right-plaisir {
+    @extend .right-appetit;
+
+    @include gradient(rgb(231, 31, 218), rgb(88, 88, 177), horizontal);
+}
+
+.left-gourmandises {
+    @extend .left-appetit;
+
+    @include gradient(rgb(185, 147, 190), rgb(16, 14, 143), horizontal);
+}
+
+.right-gourmandises {
+    @extend .right-appetit;
+
+    @include gradient(rgb(16, 14, 143), rgb(185, 147, 190), horizontal);
 }
