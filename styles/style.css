@@ -121,7 +121,7 @@ a:hover {
   background-color: #EDEFEF;
 }
 
-.bg-box4 {
+.bg-box4, .menupalette {
   background-color: #FDFFFD;
 }
 
@@ -170,7 +170,7 @@ a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.palette {
+.palette, .palette-title {
   font-family: 'Kaushan Script', cursive, sans-serif;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(right, #6ceead, green);
@@ -571,29 +571,6 @@ table td:last-child {
   font-size: 2.5rem;
 }
 
-/* .mise-en-appetit {
-    @include text-gradient(right, blue, orange);
-}
-
-.plaisir {
-    @include text-gradient(right, rgb(88, 88, 177), rgb(231, 31, 218));
-}
-
-.gourmandises {
-    @include text-gradient(right, rgb(185, 147, 190), rgb(16, 14, 143));
-}
-
-.h3-appetit {
-    @extend .mise-en-appetit;
-}
-
-.h3-plaisir {
-    @extend .plaisir;
-}
-
-.h3-gourmandises {
-    @extend .gourmandises;
-} */
 .left-commencer, .right-commencer, .right-continuer, .right-terminer, .left-continuer, .left-terminer {
   background: blue;
   background: -webkit-gradient(linear, left top, right top, from(blue), to(#122dc7));
@@ -629,6 +606,55 @@ table td:last-child {
   background: #b8d4eb;
   background: -webkit-gradient(linear, left top, right top, from(#b8d4eb), to(#0d9cdf));
   background: linear-gradient(to right, #b8d4eb, #0d9cdf);
+}
+
+.row-palette {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 0.9rem;
+}
+
+.row-palette h3 {
+  font-family: 'Segoe Print', sans-serif;
+  font-size: 1.1rem;
+}
+
+.menupalette {
+  width: 60%;
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+          box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+.palette-title {
+  font-size: 2.5rem;
+}
+
+.left-esquisse, .left-oeuvre, .left-sommet {
+  background: #047717;
+  background: -webkit-gradient(linear, left top, right top, from(#047717), to(#aef3be));
+  background: linear-gradient(to right, #047717, #aef3be);
+  -webkit-clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
+          clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
+}
+
+.right-esquisse, .right-oeuvre, .right-sommet {
+  background: #aef3be;
+  background: -webkit-gradient(linear, left top, right top, from(#aef3be), to(#047717));
+  background: linear-gradient(to right, #aef3be, #047717);
+  -webkit-clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
+          clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
 }
 
 .next {

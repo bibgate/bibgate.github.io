@@ -208,31 +208,6 @@ table {
     font-size: 2.5rem;
 }
 
-//-----Styles pour les textes en dégradé-----
-/* .mise-en-appetit {
-    @include text-gradient(right, blue, orange);
-}
-
-.plaisir {
-    @include text-gradient(right, rgb(88, 88, 177), rgb(231, 31, 218));
-}
-
-.gourmandises {
-    @include text-gradient(right, rgb(185, 147, 190), rgb(16, 14, 143));
-}
-
-.h3-appetit {
-    @extend .mise-en-appetit;
-}
-
-.h3-plaisir {
-    @extend .plaisir;
-}
-
-.h3-gourmandises {
-    @extend .gourmandises;
-} */
-
 //-----Styles pour les flèches-----
 
 .left-commencer {
@@ -269,4 +244,66 @@ table {
     @extend .right-commencer;
 
     @include gradient(rgb(184, 212, 235), rgb(13, 156, 223), horizontal);
+}
+
+//======STYLES PAGE PALETTE DU GOUT======
+.row-palette {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 0.9rem;
+
+    h3 {
+        font-family: 'Segoe Print', sans-serif;
+        font-size: 1.1rem;
+    }
+}
+
+.menupalette {
+    width: 60%;
+
+    @extend .bg-box4;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+.palette-title {
+    @extend .palette;
+
+    font-size: 2.5rem;
+}
+
+//-----Styles pour les flèches-----
+
+.left-esquisse {
+    @include gradient(rgb(4, 119, 23), rgb(174, 243, 190), horizontal);
+
+    clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
+}
+
+.right-esquisse {
+    @include gradient(rgb(174, 243, 190), rgb(4, 119, 23), horizontal);
+
+    clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
+}
+
+.left-oeuvre {
+    @extend .left-esquisse;
+}
+
+.right-oeuvre {
+    @extend .right-esquisse;
+}
+
+.left-sommet {
+    @extend .left-esquisse;
+}
+
+.right-sommet {
+    @extend .right-esquisse;
 }
