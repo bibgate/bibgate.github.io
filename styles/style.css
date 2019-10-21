@@ -392,7 +392,7 @@ table td:last-child {
 
 .menu-note {
   width: 60%;
-  height: 140vh;
+  height: 150vh;
   -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
           box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
   -webkit-box-orient: vertical;
@@ -445,6 +445,10 @@ table td:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.flotte-note .note {
+  padding: 10px;
 }
 
 .centerow {

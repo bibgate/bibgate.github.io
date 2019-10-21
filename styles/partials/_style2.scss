@@ -51,7 +51,7 @@ table {
 
 .menu-note {
     width: 60%;
-    height: 140vh;
+    height: 150vh;
     box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
     flex-flow: column wrap;
     text-align: center;
@@ -79,7 +79,11 @@ table {
 
 .flotte-note {
     @include flexCenter;
-}
+    .note {
+        padding: 10px;
+    }
+    }
+
 
 //======STYLES PAGE CHIC A LA FRANCAISE======
 .centerow {
