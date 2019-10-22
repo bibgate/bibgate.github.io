@@ -1,5 +1,14 @@
 @import "./_fonts.scss";
 
+article {
+    //======media queries pour smartphones=======
+    @include breakpoint-phone {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    width: 80%;
+    margin: 2.5rem auto ;
+}
 //======STYLES PAGE NOTE ENCHANTEE======
 
 main {
@@ -197,6 +206,9 @@ table {
 
 .menudelice {
     width: 60%;
+    @include breakpoint-phone {
+        width: 100%;
+    }
 
     @extend .bg-box3;
 

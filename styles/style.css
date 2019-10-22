@@ -340,6 +340,18 @@ footer a {
   }
 }
 
+article {
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
 main {
   width: 100%;
   display: -webkit-box;
@@ -569,6 +581,12 @@ table td:last-child {
     align-items: center; */
   -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
           box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+@media (max-width: 600px) {
+  .menudelice {
+    width: 100%;
+  }
 }
 
 .papilles-title {
