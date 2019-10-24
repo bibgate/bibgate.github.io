@@ -492,6 +492,12 @@ table td:last-child {
           box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
 }
 
+@media (max-width: 600px) {
+  .menuchic {
+    width: 100%;
+  }
+}
+
 .chic-title {
   font-size: 1.5rem;
 }
@@ -657,6 +663,12 @@ table td:last-child {
     align-items: center; */
   -webkit-box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
           box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+@media (max-width: 600px) {
+  .menupalette {
+    width: 100%;
+  }
 }
 
 .palette-title {

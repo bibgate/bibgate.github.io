@@ -6,9 +6,12 @@ article {
         width: 100%;
         font-size: 0.8rem;
     }
+
+
     width: 80%;
-    margin: 2.5rem auto ;
+    margin: 2.5rem auto;
 }
+
 //======STYLES PAGE NOTE ENCHANTEE======
 
 main {
@@ -88,11 +91,11 @@ table {
 
 .flotte-note {
     @include flexCenter;
+
     .note {
         padding: 10px;
     }
-    }
-
+}
 
 //======STYLES PAGE CHIC A LA FRANCAISE======
 .centerow {
@@ -113,6 +116,12 @@ table {
     width: 60%;
 
     @extend .bg-box2;
+
+    //======media queries pour smartphones=======
+    @include breakpoint-phone {
+        width: 100%;
+    }
+
 
     /* display: flex;
     justify-content: center;
@@ -206,9 +215,12 @@ table {
 
 .menudelice {
     width: 60%;
+
+    //======media queries pour smartphones=======
     @include breakpoint-phone {
         width: 100%;
     }
+
 
     @extend .bg-box3;
 
@@ -281,6 +293,12 @@ table {
     width: 60%;
 
     @extend .bg-box4;
+
+    //======media queries pour smartphones=======
+    @include breakpoint-phone {
+        width: 100%;
+    }
+
 
     /* display: flex;
     justify-content: center;
