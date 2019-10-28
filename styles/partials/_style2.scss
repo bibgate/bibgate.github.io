@@ -14,6 +14,58 @@ article {
 
 //======STYLES PAGE NOTE ENCHANTEE======
 
+.menunote {
+    width: 60%;
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 0.9rem;
+
+    @extend .bg-box1;
+    .h3-note {
+        
+        font-family: 'Segoe Print', sans-serif;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    //======media queries pour smartphones=======
+    @include breakpoint-phone {
+        width: 100%;
+    }
+
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+
+.note-title {
+    @extend .note;
+
+    font-size: 2.5rem;
+}
+.flotte-note {
+    @extend .note;
+    font-size: 1rem;
+    float: right;
+}
+
+//-----Styles pour les flèches-----
+
+.left-note {
+    @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
+
+    clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
+}
+
+.right-note {
+    @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+
+    clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
+}
+
+
 main {
     width: 100%;
 
@@ -61,41 +113,7 @@ table {
     }
 }
 
-.menu-note {
-    width: 60%;
-    height: 150vh;
-    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
-    flex-flow: column wrap;
-    text-align: center;
 
-    @include flexCenter;
-
-    @extend .bg-box1;
-}
-
-.line {
-    margin: 30px;
-    height: 3px;
-    width: 75%;
-    background-color: #3d171d;
-    border: 2px solid;
-    box-shadow: 0 0 10px rgba(83, 35, 2, 0.8);
-
-    @include flexCenter;
-}
-
-.texte-line {
-    background-color: #FCDFDB;
-    padding: 0 50px 0 50px;
-}
-
-.flotte-note {
-    @include flexCenter;
-
-    .note {
-        padding: 10px;
-    }
-}
 
 //======STYLES PAGE CHIC A LA FRANCAISE======
 .centerow {
