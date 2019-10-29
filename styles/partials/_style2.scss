@@ -21,7 +21,9 @@ article {
 
     @extend .bg-box1;
     .h3-note {
-        
+        @include breakpoint-phone {
+            text-align: center;
+        }
         font-family: 'Segoe Print', sans-serif;
         font-size: 1.3rem;
         text-align: center;
@@ -48,7 +50,6 @@ article {
 .flotte-note {
     @extend .note;
     font-size: 1.5rem;
-    float: right;
 }
 
 //-----Styles pour les flèches-----
@@ -57,12 +58,20 @@ article {
     @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
 
     clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
+    @include breakpoint-phone {
+        display: none;
+    
+    }
 }
 
 .right-note {
     @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
 
     clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
+    @include breakpoint-phone {
+        display: none;
+    
+    }
 }
 
 
