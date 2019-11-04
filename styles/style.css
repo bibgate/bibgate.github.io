@@ -398,24 +398,12 @@ article {
           clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
 }
 
-@media (max-width: 600px) {
-  .left-note {
-    display: none;
-  }
-}
-
 .right-note {
   background: #584727;
   background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
   background: linear-gradient(to right, #584727, #3d171d);
   -webkit-clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
           clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
-}
-
-@media (max-width: 600px) {
-  .right-note {
-    display: none;
-  }
 }
 
 main {

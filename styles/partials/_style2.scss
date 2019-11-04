@@ -55,25 +55,20 @@ article {
 //-----Styles pour les flèches-----
 
 .left-note {
-    @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
+        @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
 
-    clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
-    @include breakpoint-phone {
-        display: none;
+        clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
     
-    }
+   
 }
 
 .right-note {
-    @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
 
-    clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
-    @include breakpoint-phone {
-        display: none;
-    
-    }
+        @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+
+        clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
+   
 }
-
 
 main {
     width: 100%;
