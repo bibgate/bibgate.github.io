@@ -23,6 +23,7 @@ article {
     .h3-note {
         @include breakpoint-phone {
             text-align: center;
+    
         }
         font-family: 'Segoe Print', sans-serif;
         font-size: 1.3rem;
@@ -55,6 +56,11 @@ article {
 //-----Styles pour les flèches-----
 
 .left-note {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+
+    }
         @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
 
         clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
@@ -63,7 +69,11 @@ article {
 }
 
 .right-note {
+@include breakpoint-phone {
+    clip-path: none;
+    background: none;
 
+}
         @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
 
         clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
