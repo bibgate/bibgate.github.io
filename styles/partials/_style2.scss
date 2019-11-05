@@ -20,11 +20,13 @@ article {
     font-size: 0.9rem;
 
     @extend .bg-box1;
+
     .h3-note {
         @include breakpoint-phone {
             text-align: center;
-    
         }
+
+
         font-family: 'Segoe Print', sans-serif;
         font-size: 1.3rem;
         text-align: center;
@@ -48,8 +50,10 @@ article {
 
     font-size: 2.5rem;
 }
+
 .flotte-note {
     @extend .note;
+
     font-size: 1.5rem;
 }
 
@@ -59,25 +63,24 @@ article {
     @include breakpoint-phone {
         clip-path: none;
         background: none;
-
     }
-        @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
 
-        clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
-    
-   
+
+    @include gradient(#3d171d, rgb(88, 71, 39), horizontal);
+
+    clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
 }
 
 .right-note {
-@include breakpoint-phone {
-    clip-path: none;
-    background: none;
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 
-}
-        @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
 
-        clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
-   
+    @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+
+    clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
 }
 
 main {
@@ -98,36 +101,6 @@ h3 {
     text-align: center;
     font-weight: bold;
 }
-
-table {
-    font-family: 'Segoe Print', sans-serif;
-    font-size: 0.8rem;
-    margin-bottom: 50px;
-
-    thead {
-        div {
-            text-align: center;
-        }
-    }
-
-    td {
-        padding: 5px 70px 5px 70px;
-        text-align: justify;
-    }
-
-    td:last-child {
-        font-weight: bold;
-        font-size: 1rem;
-    }
-}
-
-.mouv-final {
-    td {
-        padding: 5px 60px 5px 0;
-    }
-}
-
-
 
 //======STYLES PAGE CHIC A LA FRANCAISE======
 .centerow {
@@ -195,36 +168,72 @@ table {
 //-----Styles pour les flèches-----
 
 .left-appetit {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
+
+
     @include gradient(blue, orange, horizontal);
 
     clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
 }
 
 .right-appetit {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
+
+
     @include gradient(orange, blue, horizontal);
 
     clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
 }
 
 .left-plaisir {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
+
+
     @extend .left-appetit;
 
     @include gradient(rgb(88, 88, 177), rgb(231, 31, 218), horizontal);
 }
 
 .right-plaisir {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
+
+
     @extend .right-appetit;
 
     @include gradient(rgb(231, 31, 218), rgb(88, 88, 177), horizontal);
 }
 
 .left-gourmandises {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
+
+
     @extend .left-appetit;
 
     @include gradient(rgb(185, 147, 190), rgb(16, 14, 143), horizontal);
 }
 
 .right-gourmandises {
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
+
+
     @extend .right-appetit;
 
     @include gradient(rgb(16, 14, 143), rgb(185, 147, 190), horizontal);
@@ -274,36 +283,62 @@ table {
     @include gradient(blue, rgb(18, 45, 199), horizontal);
 
     clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
+
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .right-commencer {
     @extend .left-commencer;
 
     clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
+
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .left-continuer {
     @extend .left-commencer;
 
     @include gradient(rgb(13, 156, 223), rgb(22, 37, 241), horizontal);
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .right-continuer {
     @extend .right-commencer;
 
     @include gradient(rgb(22, 37, 241), rgb(13, 156, 223), horizontal);
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .left-terminer {
     @extend .left-commencer;
 
     @include gradient(rgb(13, 156, 223), rgb(184, 212, 235), horizontal);
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .right-terminer {
     @extend .right-commencer;
 
     @include gradient(rgb(184, 212, 235), rgb(13, 156, 223), horizontal);
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 //======STYLES PAGE PALETTE DU GOUT======
@@ -350,12 +385,22 @@ table {
     @include gradient(rgb(4, 119, 23), rgb(174, 243, 190), horizontal);
 
     clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
+
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .right-esquisse {
     @include gradient(rgb(174, 243, 190), rgb(4, 119, 23), horizontal);
 
     clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
+
+    @include breakpoint-phone {
+        clip-path: none;
+        background: none;
+    }
 }
 
 .left-oeuvre {

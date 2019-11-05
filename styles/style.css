@@ -448,30 +448,6 @@ h3 {
   font-weight: bold;
 }
 
-table {
-  font-family: 'Segoe Print', sans-serif;
-  font-size: 0.8rem;
-  margin-bottom: 50px;
-}
-
-table thead div {
-  text-align: center;
-}
-
-table td {
-  padding: 5px 70px 5px 70px;
-  text-align: justify;
-}
-
-table td:last-child {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.mouv-final td {
-  padding: 5px 60px 5px 0;
-}
-
 .centerow {
   width: 100%;
   display: -webkit-box;
@@ -537,6 +513,14 @@ table td:last-child {
           clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
 }
 
+@media (max-width: 600px) {
+  .left-appetit, .left-plaisir, .left-gourmandises {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .right-appetit, .right-plaisir, .right-gourmandises {
   background: orange;
   background: -webkit-gradient(linear, left top, right top, from(orange), to(blue));
@@ -545,10 +529,26 @@ table td:last-child {
           clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
 }
 
+@media (max-width: 600px) {
+  .right-appetit, .right-plaisir, .right-gourmandises {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .left-plaisir {
   background: #5858b1;
   background: -webkit-gradient(linear, left top, right top, from(#5858b1), to(#e71fda));
   background: linear-gradient(to right, #5858b1, #e71fda);
+}
+
+@media (max-width: 600px) {
+  .left-plaisir {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
 }
 
 .right-plaisir {
@@ -557,16 +557,40 @@ table td:last-child {
   background: linear-gradient(to right, #e71fda, #5858b1);
 }
 
+@media (max-width: 600px) {
+  .right-plaisir {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .left-gourmandises {
   background: #b993be;
   background: -webkit-gradient(linear, left top, right top, from(#b993be), to(#100e8f));
   background: linear-gradient(to right, #b993be, #100e8f);
 }
 
+@media (max-width: 600px) {
+  .left-gourmandises {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .right-gourmandises {
   background: #100e8f;
   background: -webkit-gradient(linear, left top, right top, from(#100e8f), to(#b993be));
   background: linear-gradient(to right, #100e8f, #b993be);
+}
+
+@media (max-width: 600px) {
+  .right-gourmandises {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
 }
 
 .row-papilles {
@@ -616,9 +640,25 @@ table td:last-child {
           clip-path: polygon(94% 50%, 97% 62%, 3% 62%, 1% 37%, 11% 50%);
 }
 
+@media (max-width: 600px) {
+  .left-commencer, .right-commencer, .right-continuer, .right-terminer, .left-continuer, .left-terminer {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .right-commencer, .right-continuer, .right-terminer {
   -webkit-clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
           clip-path: polygon(100% 32%, 97% 62%, 3% 62%, 6% 48%, 87% 48%);
+}
+
+@media (max-width: 600px) {
+  .right-commencer, .right-continuer, .right-terminer {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
 }
 
 .left-continuer {
@@ -627,10 +667,26 @@ table td:last-child {
   background: linear-gradient(to right, #0d9cdf, #1625f1);
 }
 
+@media (max-width: 600px) {
+  .left-continuer {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .right-continuer {
   background: #1625f1;
   background: -webkit-gradient(linear, left top, right top, from(#1625f1), to(#0d9cdf));
   background: linear-gradient(to right, #1625f1, #0d9cdf);
+}
+
+@media (max-width: 600px) {
+  .right-continuer {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
 }
 
 .left-terminer {
@@ -639,10 +695,26 @@ table td:last-child {
   background: linear-gradient(to right, #0d9cdf, #b8d4eb);
 }
 
+@media (max-width: 600px) {
+  .left-terminer {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .right-terminer {
   background: #b8d4eb;
   background: -webkit-gradient(linear, left top, right top, from(#b8d4eb), to(#0d9cdf));
   background: linear-gradient(to right, #b8d4eb, #0d9cdf);
+}
+
+@media (max-width: 600px) {
+  .right-terminer {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
 }
 
 .row-palette {
@@ -692,12 +764,28 @@ table td:last-child {
           clip-path: polygon(0 38%, 19% 45%, 41% 42%, 63% 44%, 83% 39%, 100% 41%, 100% 59%, 78% 52%, 66% 60%, 44% 59%, 21% 56%, 0 60%);
 }
 
+@media (max-width: 600px) {
+  .left-esquisse, .left-oeuvre, .left-sommet {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
+}
+
 .right-esquisse, .right-oeuvre, .right-sommet {
   background: #aef3be;
   background: -webkit-gradient(linear, left top, right top, from(#aef3be), to(#047717));
   background: linear-gradient(to right, #aef3be, #047717);
   -webkit-clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
           clip-path: polygon(70% 51%, 36% 57%, 0 43%, 0 63%, 34% 73%, 80% 63%, 100% 72%, 100% 44%);
+}
+
+@media (max-width: 600px) {
+  .right-esquisse, .right-oeuvre, .right-sommet {
+    -webkit-clip-path: none;
+            clip-path: none;
+    background: none;
+  }
 }
 
 .next {
