@@ -210,6 +210,13 @@ footer a {
   }
 }
 
+@media (max-width: 1200px) {
+  footer {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+}
+
 @-webkit-keyframes typewriter {
   from {
     width: 0;
@@ -379,7 +386,37 @@ article {
 @media (max-width: 600px) {
   .menunote {
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
+}
+
+@media (max-width: 900px) {
+  .menunote {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menunote {
+    width: 100%;
+  }
+}
+
+.same-margin {
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+@media (max-width: 600px) {
+  .same-margin {
+    width: 100%;
+  }
+}
+
+.note-article {
+  width: 100%;
+  margin: 0;
 }
 
 .note-title {

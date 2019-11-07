@@ -36,13 +36,34 @@ article {
     //======media queries pour smartphones=======
     @include breakpoint-phone {
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
+    @include breakpoint-tablet-port {
+        width: 100%;
+    }
 
+    @include breakpoint-tablet-land {
+    width: 100%;
+    }
+    
     /* display: flex;
     justify-content: center;
     align-items: center; */
     box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
+}
+.same-margin {
+    width: 80%;
+    margin: 2.5rem auto;
+    @include breakpoint-phone {
+        width: 100%;
+    }
+}
+
+.note-article {
+    width: 100%;
+    margin: 0;
 }
 
 .note-title {
