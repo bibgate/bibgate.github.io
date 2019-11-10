@@ -24,4 +24,9 @@ footer {
         margin-bottom: 0;
         font-size: 0.9rem;
     }
+
+    @include breakpoint-tablet-port {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+    }
 }
