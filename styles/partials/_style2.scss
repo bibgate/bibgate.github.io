@@ -1,7 +1,27 @@
 @import "./_fonts.scss";
 
+//=====GENERALITES======
+
+main {
+    width: 100%;
+
+    @include flexCenter;
+}
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Segoe Print', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 article {
-    //======media queries pour smartphones=======
     @include breakpoint-phone {
         width: 100%;
         font-size: 0.8rem;
@@ -12,50 +32,59 @@ article {
     margin: 2.5rem auto;
 }
 
-//======STYLES PAGE NOTE ENCHANTEE======
-
-.menunote {
-    width: 60%;
-    font-family: 'Segoe Print', sans-serif;
+.centerow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', sans-serif;
     font-size: 0.9rem;
 
-    @extend .bg-box1;
-
-    .h3-note {
-        @include breakpoint-phone {
-            text-align: center;
-        }
-
-
-        font-family: 'Segoe Print', sans-serif;
-        font-size: 1.3rem;
-        text-align: center;
-        font-weight: bold;
+    h3 {
+        font-family: 'Roboto Slab', sans-serif;
+        font-size: 1.1rem;
     }
+}
 
-    //======media queries pour smartphones=======
+.wrapper {
+    width: 60%;
+
     @include breakpoint-phone {
         width: 100%;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
+
     @include breakpoint-tablet-port {
         width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
+
     @include breakpoint-tablet-land {
-    width: 100%;
+        width: 100%;
     }
-    
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
 }
+
+//======STYLES PAGE NOTE ENCHANTEE======
+
+.menunote {
+    @extend .bg-box1;
+
+    .h3-note {
+        font-family: 'Segoe Print', sans-serif;
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
 .same-margin {
     width: 80%;
     margin: 2.5rem auto;
+
     @include breakpoint-phone {
         width: 100%;
     }
@@ -104,55 +133,10 @@ article {
     clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
 }
 
-main {
-    width: 100%;
-
-    @include flexCenter;
-}
-
-h2 {
-    font-size: 1.7rem;
-    text-align: center;
-    font-weight: bold;
-}
-
-h3 {
-    font-family: 'Segoe Print', sans-serif;
-    font-size: 1.3rem;
-    text-align: center;
-    font-weight: bold;
-}
-
 //======STYLES PAGE CHIC A LA FRANCAISE======
-.centerow {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 0.9rem;
-
-    h3 {
-        font-family: 'Roboto Slab', sans-serif;
-        font-size: 1.1rem;
-    }
-}
 
 .menuchic {
-    width: 60%;
-
     @extend .bg-box2;
-
-    //======media queries pour smartphones=======
-    @include breakpoint-phone {
-        width: 100%;
-    }
-
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
 }
 
 .chic-title {
@@ -261,35 +245,10 @@ h3 {
 }
 
 //======STYLES PAGE DELICE DES PAPILLES======
-.row-papilles {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe Print', sans-serif;
-    font-size: 0.9rem;
-
-    h3 {
-        font-family: 'Segoe Print', sans-serif;
-        font-size: 1.1rem;
-    }
-}
 
 .menudelice {
-    width: 60%;
-
-    //======media queries pour smartphones=======
-    @include breakpoint-phone {
-        width: 100%;
-    }
-
-
     @extend .bg-box3;
 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
 }
 
 .papilles-title {
@@ -363,35 +322,10 @@ h3 {
 }
 
 //======STYLES PAGE PALETTE DU GOUT======
-.row-palette {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe Print', sans-serif;
-    font-size: 0.9rem;
-
-    h3 {
-        font-family: 'Segoe Print', sans-serif;
-        font-size: 1.1rem;
-    }
-}
 
 .menupalette {
-    width: 60%;
-
     @extend .bg-box4;
 
-    //======media queries pour smartphones=======
-    @include breakpoint-phone {
-        width: 100%;
-    }
-
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    box-shadow: 0 0 10px rgba(202, 81, 196, 0.4);
 }
 
 .palette-title {
