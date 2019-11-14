@@ -215,6 +215,7 @@ a:hover {
 footer {
   font-size: 1rem;
   height: 40px;
+  position: fixed;
   margin-bottom: 0px;
   padding: 10px;
 }
