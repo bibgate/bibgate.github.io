@@ -37,11 +37,11 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Segoe Print', sans-serif;
     font-size: 0.9rem;
 
     h3 {
-        font-family: 'Roboto Slab', sans-serif;
+        font-family: 'Segoe Print', sans-serif;
         font-size: 1.1rem;
     }
 }
@@ -137,6 +137,13 @@ article {
 
 .menuchic {
     @extend .bg-box2;
+
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 0.9rem;
+
+    h3 {
+        font-family: 'Roboto Slab', sans-serif;
+    }
 }
 
 .chic-title {
@@ -147,15 +154,15 @@ article {
 
 //-----Styles pour les textes en dégradé-----
 .mise-en-appetit {
-    @include text-gradient(right, blue, orange);
+    @include text-gradient(right, rgb(202, 138, 95), rgb(192, 130, 16));
 }
 
 .plaisir {
-    @include text-gradient(right, rgb(88, 88, 177), rgb(231, 31, 218));
+    @include text-gradient(right, rgb(182, 151, 189), rgb(235, 119, 227));
 }
 
 .gourmandises {
-    @include text-gradient(right, rgb(185, 147, 190), rgb(16, 14, 143));
+    @include text-gradient(right, rgb(185, 147, 190), rgb(81, 79, 190));
 }
 
 .h3-appetit {
@@ -179,7 +186,7 @@ article {
     }
 
 
-    @include gradient(blue, orange, horizontal);
+    @include gradient(maroon, orange, horizontal);
 
     clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
 }
@@ -191,7 +198,7 @@ article {
     }
 
 
-    @include gradient(orange, blue, horizontal);
+    @include gradient(orange, maroon, horizontal);
 
     clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
 }
@@ -325,7 +332,6 @@ article {
 
 .menupalette {
     @extend .bg-box4;
-
 }
 
 .palette-title {

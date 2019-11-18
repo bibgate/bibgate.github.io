@@ -412,12 +412,12 @@ article {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Segoe Print', sans-serif;
   font-size: 0.9rem;
 }
 
 .centerow h3 {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Segoe Print', sans-serif;
   font-size: 1.1rem;
 }
 
@@ -510,32 +510,41 @@ article {
   }
 }
 
+.menuchic {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 0.9rem;
+}
+
+.menuchic h3 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
 .chic-title {
   font-size: 1.5rem;
 }
 
 .mise-en-appetit, .h3-appetit {
-  background: -webkit-linear-gradient(right, blue, orange);
+  background: -webkit-linear-gradient(right, #ca8a5f, #c08210);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .plaisir, .h3-plaisir {
-  background: -webkit-linear-gradient(right, #5858b1, #e71fda);
+  background: -webkit-linear-gradient(right, #b697bd, #eb77e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gourmandises, .h3-gourmandises {
-  background: -webkit-linear-gradient(right, #b993be, #100e8f);
+  background: -webkit-linear-gradient(right, #b993be, #514fbe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .left-appetit, .left-plaisir, .left-gourmandises {
-  background: blue;
-  background: -webkit-gradient(linear, left top, right top, from(blue), to(orange));
-  background: linear-gradient(to right, blue, orange);
+  background: maroon;
+  background: -webkit-gradient(linear, left top, right top, from(maroon), to(orange));
+  background: linear-gradient(to right, maroon, orange);
   -webkit-clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
           clip-path: polygon(86% 24%, 100% 40%, 88% 59%, 0 43%);
 }
@@ -550,8 +559,8 @@ article {
 
 .right-appetit, .right-plaisir, .right-gourmandises {
   background: orange;
-  background: -webkit-gradient(linear, left top, right top, from(orange), to(blue));
-  background: linear-gradient(to right, orange, blue);
+  background: -webkit-gradient(linear, left top, right top, from(orange), to(maroon));
+  background: linear-gradient(to right, orange, maroon);
   -webkit-clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
           clip-path: polygon(9% 23%, 100% 39%, 9% 55%, 0% 38%);
 }
