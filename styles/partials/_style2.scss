@@ -153,6 +153,14 @@ article {
 }
 
 //-----Styles pour les textes en dégradé-----
+#orange-gradient .row [class*="col"] {
+    @extend .mise-en-appetit;
+}
+
+#purple-gradient .row [class*="col"] {
+    @extend .plaisir;
+}
+
 .mise-en-appetit {
     @include text-gradient(right, rgb(202, 138, 95), rgb(192, 130, 16));
 }
@@ -255,7 +263,6 @@ article {
 
 .menudelice {
     @extend .bg-box3;
-
 }
 
 .papilles-title {

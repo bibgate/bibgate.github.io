@@ -523,13 +523,13 @@ article {
   font-size: 1.5rem;
 }
 
-.mise-en-appetit, .h3-appetit {
+.mise-en-appetit, #orange-gradient .row [class*="col"], .h3-appetit {
   background: -webkit-linear-gradient(right, #ca8a5f, #c08210);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.plaisir, .h3-plaisir {
+.plaisir, #purple-gradient .row [class*="col"], .h3-plaisir {
   background: -webkit-linear-gradient(right, #b697bd, #eb77e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
