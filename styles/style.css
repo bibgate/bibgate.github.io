@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap");
 header, footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,7 +176,7 @@ a:hover {
 }
 
 .menu2 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Frank Ruhl Libre', serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #C77412;
