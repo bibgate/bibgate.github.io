@@ -171,6 +171,7 @@ a:hover {
   font-family: 'Croissant one', cursive, sans-serif;
   font-size: 1rem;
   background: -webkit-linear-gradient(right, blue, orange);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -186,6 +187,7 @@ a:hover {
   font-family: 'Dancing Script', cursive, sans-serif;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(right, #2e8baa, blue);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -194,6 +196,7 @@ a:hover {
   font-family: 'Schoolbell', cursive, sans-serif;
   font-size: 2em;
   background: -webkit-linear-gradient(right, #44b9e0, blue);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -202,6 +205,7 @@ a:hover {
   font-family: 'Kaushan Script', cursive, sans-serif;
   font-size: 1.5rem;
   background: -webkit-linear-gradient(right, #6ceead, green);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -210,6 +214,7 @@ a:hover {
   font-family: 'Schoolbell', cursive, sans-serif;
   font-size: 2rem;
   background: -webkit-linear-gradient(right, #6ceead, green);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -391,18 +396,6 @@ h3 {
   font-weight: bold;
 }
 
-article {
-  width: 80%;
-  margin: 2.5rem auto;
-}
-
-@media (max-width: 600px) {
-  article {
-    width: 100%;
-    font-size: 0.8rem;
-  }
-}
-
 .centerow {
   width: 100%;
   display: -webkit-box;
@@ -446,6 +439,19 @@ article {
 @media (max-width: 1200px) {
   .wrapper {
     width: 100%;
+  }
+}
+
+.carte-menu {
+  width: 80%;
+  margin: 2.5rem auto;
+}
+
+@media (max-width: 600px) {
+  .carte-menu {
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 0 auto;
   }
 }
 
@@ -525,20 +531,23 @@ article {
   font-size: 1.5rem;
 }
 
-.mise-en-appetit, #orange-gradient .row [class*="col"], .h3-appetit {
+.mise-en-appetit, #orange-gradient [class*="col"], .h3-appetit {
   background: -webkit-linear-gradient(right, #ca8a5f, #c08210);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.plaisir, #purple-gradient .row [class*="col"], .h3-plaisir {
+.plaisir, #purple-gradient [class*="col"], .h3-plaisir {
   background: -webkit-linear-gradient(right, #b697bd, #eb77e3);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gourmandises, .h3-gourmandises {
   background: -webkit-linear-gradient(right, #b993be, #514fbe);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -21,17 +21,6 @@ h3 {
     font-weight: bold;
 }
 
-article {
-    @include breakpoint-phone {
-        width: 100%;
-        font-size: 0.8rem;
-    }
-
-
-    width: 80%;
-    margin: 2.5rem auto;
-}
-
 .centerow {
     width: 100%;
     display: flex;
@@ -67,6 +56,18 @@ article {
         width: 100%;
     }
 }
+.carte-menu {
+    @include breakpoint-phone {
+        width: 100%;
+        font-size: 0.8rem;
+        margin: 0 auto;
+    }
+
+
+    width: 80%;
+    margin: 2.5rem auto;
+}
+//======FIN GENERALITES========
 
 //======STYLES PAGE NOTE ENCHANTEE======
 
@@ -153,11 +154,11 @@ article {
 }
 
 //-----Styles pour les textes en dégradé-----
-#orange-gradient .row [class*="col"] {
+#orange-gradient [class*="col"] {
     @extend .mise-en-appetit;
 }
 
-#purple-gradient .row [class*="col"] {
+#purple-gradient [class*="col"] {
     @extend .plaisir;
 }
 

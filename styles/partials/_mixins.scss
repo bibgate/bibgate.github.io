@@ -37,6 +37,7 @@
 //=====TEXTE DEGRADE=====
 @mixin text-gradient($dir, $from, $to) {
     background: -webkit-linear-gradient($dir, $from, $to);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
