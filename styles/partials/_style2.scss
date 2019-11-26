@@ -1,6 +1,6 @@
 @import "./_fonts.scss";
 
-//=====GENERALITES======
+//============= DEBUT GENERALITES ===============
 
 main {
     width: 100%;
@@ -56,6 +56,7 @@ h3 {
         width: 100%;
     }
 }
+
 .carte-menu {
     @include breakpoint-phone {
         width: 100%;
@@ -67,9 +68,10 @@ h3 {
     width: 80%;
     margin: 2.5rem auto;
 }
-//======FIN GENERALITES========
 
-//======STYLES PAGE NOTE ENCHANTEE======
+//=============== FIN GENERALITES ===================
+
+//========= DEBUT STYLES PAGE NOTE ENCHANTEE ========
 
 .menunote {
     @extend .bg-box1;
@@ -134,7 +136,9 @@ h3 {
     clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
 }
 
-//======STYLES PAGE CHIC A LA FRANCAISE======
+//======== FIN STYLES PAGE NOTE ENCHANTEE =========
+
+//====== DEBUT STYLES PAGE CHIC A LA FRANCAISE ======
 
 .menuchic {
     @extend .bg-box2;
@@ -260,7 +264,9 @@ h3 {
     @include gradient(rgb(16, 14, 143), rgb(185, 147, 190), horizontal);
 }
 
-//======STYLES PAGE DELICE DES PAPILLES======
+//====== FIN STYLES PAGE CHIC A LA FRANCAISE ======
+
+//====== DEBUT STYLES PAGE DELICE DES PAPILLES =====
 
 .menudelice {
     @extend .bg-box3;
@@ -336,7 +342,9 @@ h3 {
     }
 }
 
-//======STYLES PAGE PALETTE DU GOUT======
+//======FIN STYLES PAGE DELICE DES PAPILLES======
+
+//=======DEBUT STYLES PAGE PALETTE DU GOUT=======
 
 .menupalette {
     @extend .bg-box4;
@@ -387,3 +395,5 @@ h3 {
 .right-sommet {
     @extend .right-esquisse;
 }
+
+//=======FIN STYLES PAGE PALETTE DU GOUT=======
