@@ -6,79 +6,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Site de réservation en ligne de restaurants parisiens">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- <link
-            href="https://fonts.googleapis.com/css?family=Croissant+One%7CDancing+Script%7CDevonshire%7CKalam%7CKaushan+Script%7CSchoolbell&display=swap"
-            rel="stylesheet"> -->
         <link rel="stylesheet" href="./styles/style.css">
         <title>ohmyfood</title>
     </head>
 
     <body>
-        <div class="container-fluid">
-            <!--Header avec nouveau Logo Ohmyfood-->
-            <div class="row">
-                <header class="col-12">
-                    <picture>
-                        <img class="img-fluid mx-auto d-block" src="./img/Logo-ohmyfood.png" alt="Logo ohmyfood" width="250"
-                            height="100">
-                    </picture>
-                </header>
-            </div>
-            <!--Menu de navigation avec 4 boxes pour les différents restos-->
-            <div class="navPad">
-                <nav class="navigation">
-                    <div class="box bg-box1">
-                        <a href="note.html">
-                            <div>
-                                <img src="img/note.svg" alt="icone note music" height="60" width="60">
-                                <p class="note">La note enchantée</p>
-                                <p class="menu1">Menu</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box bg-box2">
-                        <a href="chic_francaise.html">
-                            <div>
-                                <p class="chic">Le chic à la française</p>
-                                <p class="menu2">Menu</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box bg-box3">
-                        <a href="delice_papilles.html">
-                            <div>
-                                <p class="delice">Le délice des papilles</p>
-                                <p class="menu3">Menu</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="box bg-box4">
-                        <a href="palette_gout.html">
-                            <div>
-                                <p class="palette">La palette du goût</p>
-                                <p class="menu4">Menu</p>
-                            </div>
-                        </a>
-                    </div>
-                </nav>
-            </div>
-            <!--Section prochainement animé en typewriter-->
-            <div class="mablock">
-                <div class="typing p-3">
-                    Prochainement...
+        <!--Header avec nouveau Logo Ohmyfood-->
+        <header class="max-width-100">
+            <picture>
+                <img id="logo" src="./img/Logo-ohmyfood.png" alt="Logo ohmyfood">
+            </picture>
+        </header>
+        <!--Menu de navigation avec 4 boxes pour les différents restos-->
+        <div class="navPad">
+            <nav class="navigation">
+                <div class="box bg-box1">
+                    <a href="note.html">
+                        <div>
+                            <img src="img/note.svg" alt="icone note music" height="60" width="60">
+                            <p class="note">La note enchantée</p>
+                            <p class="menu1">Menu</p>
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <!--Footer-->
-            <div class="row fixed-bottom mt-5">
-                <footer class="col-12">
-                    <p class="push"><a href="mentions.html" target="_blank" rel="noreferrer noopener">Mentions
-                            légales</a></p>
-                    <p><a href="mailto:hello@ohmyfood.fr">Contactez-nous</a></p>
-                </footer>
+                <div class="box bg-box2">
+                    <a href="chic_francaise.html">
+                        <div>
+                            <p class="chic">Le chic à la française</p>
+                            <p class="menu2">Menu</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box bg-box3">
+                    <a href="delice_papilles.html">
+                        <div>
+                            <p class="delice">Le délice des papilles</p>
+                            <p class="menu3">Menu</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="box bg-box4">
+                    <a href="palette_gout.html">
+                        <div>
+                            <p class="palette">La palette du goût</p>
+                            <p class="menu4">Menu</p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <!--Section prochainement animé en typewriter-->
+        <div class="mablock">
+            <div class="typing">
+                Prochainement...
             </div>
         </div>
+        <!--Footer-->
+         <footer class="max-width-100 flex flex-item">
+             <div>
+                 <p><a href="mentions.html" target="_blank" rel="noreferrer noopener">Mentions légales</a></p>
+             </div>
+             <div>
+                 <p><a href="mailto:hello@ohmyfood.fr">Contactez-nous</a></p>
+             </div>
+         </footer>
 
     </body>
 

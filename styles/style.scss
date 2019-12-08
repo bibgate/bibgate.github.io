@@ -7,6 +7,14 @@
 @import "./partials/keyframes";
 @import "./partials/style2";
 
+//=======GLOBAL RESET======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//=====FIN GLOBAL RESET====
+
 .next {
     display: flex;
     border: 1px solid;
@@ -41,8 +49,10 @@
     padding: .2rem;
     animation: typing 5s steps(32) infinite;
     white-space: nowrap;
+    font-family: $hfFonts;
     font-size: 1rem;
     box-sizing: border-box;
+    padding: 1rem;
 }
 
 .mablock {
@@ -53,6 +63,6 @@
     border: 1px solid;
     background-color: $hfColor;
     border-radius: 10px;
-    color: $hfTextColor; 
+    color: $hfTextColor;
     margin-bottom: 3rem;
 }

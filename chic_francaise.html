@@ -5,130 +5,150 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./styles/style.css">
         <title>ohmyfood - le chic à la française</title>
     </head>
 
     <body>
-        <div class="container-fluid">
-            <!--Header avec nouveau Logo Ohmyfood-->
-            <div class="row">
-                <header class="col-12">
-                    <picture>
-                        <img class="img-fluid mx-auto d-block" src="./img/Logo-ohmyfood.png" alt="Logo ohmyfood"
-                            width="250" height="100">
-                    </picture>
-                </header>
-            </div>
-            <!--Carte du restaurant avec les différents menus-->
-            <div class="centerow container-fluid">
-                <div class="row menuchic wrapper h-100 mt-5 mb-5 d-flex justify-content-center align-items-center">
-                    <div class="row mt-5">
-                        <div class="col-12 mt-5 mb-5">
-                            <h2 class="chic-title">Le chic à la française</h2>
-                        </div>
-                    </div>
-                    <div class="container-fluid">
-                        <article>
-                            <div class="row mt-5">
-                                <div class="col-2 col-md-4 left-appetit">
-
-                                </div>
-                                <div class="col-8 col-md-4">
-                                    <h3 class="h3-appetit">Pour se mettre en appétit</h3>
-                                </div>
-                                <div class="col-2 col-md-4 right-appetit">
-
-                                </div>
-                                <div class="row mise-en-appetit carte-menu" id="orange-gradient">
-                                    <div class="col-9 col-md-10">
-                                        <p>Tartare de poulpe accidulé aux zests d'orange</p>
-                                    </div>
-                                    <div class="col-3 col-md-2 font-weight-bold text-right">
-                                        <p>79€</p>
-                                    </div>
-                                    <div class="col-9 col-md-10">
-                                        <p>Velouté de légumes d'antan</p>
-                                    </div>
-                                    <div class="col-3 col-md-2 font-weight-bold text-right">
-                                        <p>57€</p>
-                                    </div>
-                                    <div class="col-9 col-md-10">
-                                        <p>Soupe à l'oignon revisitée</p>
-                                    </div>
-                                    <div class="col-3 col-md-2 font-weight-bold text-right">
-                                        <p>57€</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="row mt-5">
-                                <div class="col-2 col-md-4 left-plaisir">
-
-                                </div>
-                                <div class="col-8 col-md-4">
-                                    <h3 class="h3-plaisir">Plaisir des papilles</h3>
-                                </div>
-                                <div class=" col-2 col-md-4 right-plaisir">
-
-                                </div>
-                                <div class="row plaisir carte-menu" id="purple-gradient">
-                                    <div class="col-9 col-md-10">
-                                        <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
-                                    </div>
-                                    <div class="col-3 col-md-2 font-weight-bold text-right">
-                                        <p>95€</p>
-                                    </div>
-                                    <div class="col-9 col-md-10">
-                                        <p>Magret de canard et parmentier de pommes de terres</p>
-                                    </div>
-                                    <div class="col-3 col-md-2 font-weight-bold text-right">
-                                        <p>88€</p>
-                                    </div>
-                                    <div class="col-9 col-md-10">
-                                        <p>Pigeonneau d'Ile et Vilaine sur son lit de gnocchis aux légumes</p>
-                                    </div>
-                                    <div class="col-3 col-md-2 font-weight-bold text-right">
-                                        <p>175€</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="row mt-5">
-                                <div class="col-2 col-md-4 left-gourmandises">
-
-                                </div>
-                                <div class="col-8 col-md-4">
-                                    <h3 class="h3-gourmandises">Gourmandises sucrées</h3>
-                                </div>
-                                <div class="col-2 col-md-4 right-gourmandises">
-
-                                </div>
-                                <div class="row carte-menu">
-                                    <div class="col-12 gourmandises">
-                                        <p>Pétales de violettes glacés et purée de noisettes</p>
-                                        <p>Fondant au chocolat revisité</p>
-                                        <p>Millefeuille croustillant</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
+        <!--Header avec nouveau Logo Ohmyfood-->
+        <header class="max-width-100">
+            <picture>
+                <img id="logo" src="./img/Logo-ohmyfood.png" alt="Logo ohmyfood">
+            </picture>
+        </header>
+        <!--Carte du restaurant avec les différents menus-->
+        <div class="centerow margin-top-5 ">
+            <div class="menuchic wrapper margin-bottom-5">
+                <div class="margin-top-5 margin-bottom-5">
+                    <div class="h2-title">
+                        <h2 class="chic-title">Le chic à la française</h2>
                     </div>
                 </div>
-            </div>
-            <!--Footer-->
-            <div class="row fixed-bottom mt-5">
-                <footer class="col-12">
-                    <p class="push"><a href="mentions.html" target="_blank" rel="noreferrer noopener">Mentions
-                            légales</a></p>
-                    <p><a href="mailto:hello@ohmyfood.fr">Contactez-nous</a></p>
-                </footer>
+                <article class="margin-top-5">
+                    <div class="flex flexPath margin-bottom-5">
+                        <div class="left-appetit"></div>
+                        <div class="h3-chic-title">
+                            <h3 class="h3-appetit">Pour se mettre en appétit</h3>
+                        </div>
+                        <div class="right-appetit"></div>
+                    </div>
+                    <div class="mise-en-appetit carte-menu" id="orange-gradient">
+                        <div class="flex flex-item">
+                            <div class="item">
+                                <p>Tartare de poulpe accidulé aux zests d'orange</p>
+                            </div>
+                            <div class="bold-price">
+                                <p>79€</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-item">
+                            <div class="item">
+                                <p>Velouté de légumes d'antan</p>
+                            </div>
+                            <div class="bold-price">
+                                <p>57€</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-item">
+                            <div class="item">
+                                <p>Soupe à l'oignon revisitée</p>
+                            </div>
+                            <div class="bold-price">
+                                <p>57€</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="margin-top-5">
+                    <div class="flex flexPath margin-bottom-5">
+                        <div class="left-plaisir">
+
+                        </div>
+                        <div class="h3-chic-title">
+                            <h3 class="h3-plaisir">Plaisir des papilles</h3>
+                        </div>
+                        <div class="right-plaisir">
+                        </div>
+                    </div>
+                    <div class="plaisir carte-menu" id="purple-gradient">
+                        <div class="flex flex-item">
+                            <div class="item">
+                                <p>Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+                            </div>
+                            <div class="bold-price">
+                                <p>95€</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-item">
+                            <div class="item">
+                                <p>Magret de canard et parmentier de pommes de terres</p>
+                            </div>
+                            <div class="bold-price">
+                                <p>88€</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-item">
+                            <div class="item">
+                                <p>Pigeonneau d'Ile et Vilaine sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <div class="bold-price">
+                                <p>175€</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </article>
+                <article class="margin-top-5 margin-bottom-5">
+                    <div class="flex flexPath margin-bottom-5">
+                        <div class="left-gourmandises">
+
+                        </div>
+                        <div class="h3-chic-title">
+                            <h3 class="h3-gourmandises">Gourmandises sucrées</h3>
+                        </div>
+                        <div class="right-gourmandises">
+                        </div>
+                    </div>
+                    <div class="carte-menu">
+                        <div class="gourmandises">
+                            <div class="flex flex-item">
+                                <div class="item">
+                                    <p>Pétales de violettes glacés et purée de noisettes</p>
+                                </div>
+                                <div class="bold-price">
+                                    <!--attente des prix-->
+                                </div>
+                            </div>
+                            <div class="flex flex-item">
+                                <div class="item">
+                                    <p>Fondant au chocolat revisité</p>
+                                </div>
+                                <div class="bold-price">
+                                    <!--attente des prix-->
+                                </div>
+                            </div>
+                            <div class="flex flex-item">
+                                <div class="item">
+                                    <p>Millefeuille croustillant</p>
+                                </div>
+                                <div class="bold-price">
+                                    <!--attente des prix-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
+        <!--Footer-->
+         <footer class="max-width-100 flex flex-item">
+             <div>
+                 <p><a href="mentions.html" target="_blank" rel="noreferrer noopener">Mentions légales</a></p>
+             </div>
+             <div>
+                 <p><a href="mailto:hello@ohmyfood.fr">Contactez-nous</a></p>
+             </div>
+         </footer>
 
     </body>
 

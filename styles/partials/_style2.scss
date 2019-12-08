@@ -35,25 +35,89 @@ h3 {
     }
 }
 
+/* .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+.max-width-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.margin-top-5 {
+    margin-top: 3rem;
+}
+
+.margin-bottom-5 {
+    margin-bottom: 3rem;
+}
+
+.pardding-top-3 {
+    padding-top: 3rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-item {
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.flex-just-center-C {
+    justify-content: center;
+}
+
+.bold-price {
+    font-weight: 700;
+}
+
+.flexPath div:nth-child(1) {
+    width: 33%;
+}
+
+.flexPath div:nth-child(2) {
+    width: 33%;
+    @include breakpoint-phone {
+        width: 100%;
+    }
+}
+
+.flexPath div:nth-child(3) {
+    width: 33%;
+}
+
 .wrapper {
     width: 60%;
 
     @include breakpoint-phone {
         width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin: 1rem;
     }
 
 
     @include breakpoint-tablet-port {
         width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        margin: 1rem;
     }
 
 
     @include breakpoint-tablet-land {
         width: 100%;
+        margin: 1.5rem;
     }
 }
 
@@ -108,6 +172,14 @@ h3 {
     @extend .note;
 
     font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.flotte-img {
+    img {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 //-----Styles pour les flèches-----
@@ -156,6 +228,7 @@ h3 {
 
     @extend .chic;
 }
+
 
 //-----Styles pour les textes en dégradé-----
 #orange-gradient [class*="col"] {

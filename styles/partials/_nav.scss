@@ -6,6 +6,10 @@
     @include flexCenter;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     width: 60%;
 
@@ -17,7 +21,7 @@ nav {
 
     @include breakpoint-phone {
         width: 100%;
-        // flex-flow: column wrap;
+        flex-flow: column wrap;
     }
 
 

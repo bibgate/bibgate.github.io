@@ -1,11 +1,13 @@
 @import "./mixins";
 
 header {
-    h1 {
-        font-family: $hfFonts;
-        font-weight: bold;
-        font-size: 3rem;
+    margin: 0;
+
+    #logo {
+        width: 280px;
+        height: 65px;
     }
+
     @include headerFooter;
     @include breakpoint-phone {
         margin-top: 0;
