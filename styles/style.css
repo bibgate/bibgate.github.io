@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Devonshire|Kalam|Kaushan+Script|Schoolbell&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap");
@@ -138,6 +139,7 @@ a:hover {
           animation-iteration-count: infinite;
 }
 
+/*/=======BOX BACKGROUND COLORS========/*/
 .bg-box1, .menunote {
   background-color: #FCDFDB;
 }
@@ -154,6 +156,7 @@ a:hover {
   background-color: #FDFFFD;
 }
 
+/*/=======FIN BOX BACKGROUND COLORS========/*/
 .note, .note-title, .flotte-note {
   font-family: 'Devonshire', cursive, sans-serif;
   font-size: 1.5rem;
@@ -396,6 +399,7 @@ footer a {
   }
 }
 
+/*/=============== DEBUT GENERALITES ===================/*/
 main {
   width: 100%;
   display: -webkit-box;
@@ -553,6 +557,60 @@ h3 {
   }
 }
 
+/* Effet souligné hover sur les H3 */
+.h3-souligne {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.h3-souligne:before {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  -webkit-transition: width 0s ease, background-color .5s ease;
+  transition: width 0s ease, background-color .5s ease;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.h3-souligne:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+  background: #584727;
+  background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
+  background: linear-gradient(to right, #584727, #3d171d);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.h3-souligne:hover:before {
+  width: 100%;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+  background: #584727;
+  background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
+  background: linear-gradient(to right, #584727, #3d171d);
+}
+
+.h3-souligne:hover:after {
+  width: 100%;
+  background: transparent;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+/* Fin Effet souligné hover sur les H3 */
+/*/=============== FIN GENERALITES ===================/*/
+/*/========= DEBUT STYLES PAGE NOTE ENCHANTEE ========/*/
 .menunote .h3-note {
   font-family: 'Segoe Print', sans-serif;
   font-size: 1.3rem;
@@ -590,6 +648,7 @@ h3 {
   width: 40px;
 }
 
+/*---------------------Styles pour les flèches-------------------------*/
 .left-note {
   background: #3d171d;
   background: -webkit-gradient(linear, left top, right top, from(#3d171d), to(#584727));
@@ -622,6 +681,9 @@ h3 {
   }
 }
 
+/*--------------------------- Fin Styles pour les flèches--------------------*/
+/*/==================== FIN STYLES PAGE NOTE ENCHANTEE =======================/*/
+/*/================= DEBUT STYLES PAGE CHIC A LA FRANCAISE ===================/*/
 .menuchic {
   font-family: 'Roboto Slab', sans-serif;
   font-size: 0.9rem;
@@ -635,6 +697,7 @@ h3 {
   font-size: 1.5rem;
 }
 
+/*-----------------Styles pour les textes en dégradé---------------------*/
 .mise-en-appetit, #orange-gradient [class*="col"], .h3-appetit {
   background: -webkit-linear-gradient(right, #ca8a5f, #c08210);
   background-clip: text;
@@ -656,6 +719,8 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+/*-----------------Fin Styles pour les textes en dégradé---------------------*/
+/*-------------------------Styles pour les flèches---------------------------*/
 .left-appetit, .left-plaisir, .left-gourmandises {
   background: maroon;
   background: -webkit-gradient(linear, left top, right top, from(maroon), to(orange));
@@ -744,10 +809,14 @@ h3 {
   }
 }
 
+/*-----------------------Fin Styles pour les flèches---------------------------*/
+/*/============== FIN STYLES PAGE CHIC A LA FRANCAISE ==========================/*/
+/*/====================== DEBUT STYLES PAGE DELICE DES PAPILLES ================/*/
 .papilles-title {
   font-size: 2.5rem;
 }
 
+/*------------------Styles pour les flèches------------------*/
 .left-commencer, .right-commencer, .right-continuer, .right-terminer, .left-continuer, .left-terminer {
   background: blue;
   background: -webkit-gradient(linear, left top, right top, from(blue), to(#122dc7));
@@ -833,10 +902,14 @@ h3 {
   }
 }
 
+/*--------------------Fin Styles pour les flèches---------------------*/
+/*/======================FIN STYLES PAGE DELICE DES PAPILLES ================/*/
+/*/==================DEBUT STYLES PAGE PALETTE DU GOUT========================/*/
 .palette-title {
   font-size: 2.5rem;
 }
 
+/*--------------------------Styles pour les flèches----------------------------*/
 .left-esquisse, .left-oeuvre, .left-sommet {
   background: #047717;
   background: -webkit-gradient(linear, left top, right top, from(#047717), to(#aef3be));
@@ -869,6 +942,9 @@ h3 {
   }
 }
 
+/*------------------------Fin Styles pour les flèches-----------------------*/
+/*/==================FIN STYLES PAGE PALETTE DU GOUT========================/*/
+/*/==========GLOBAL RESET===========/*/
 * {
   margin: 0;
   padding: 0;
@@ -876,6 +952,8 @@ h3 {
           box-sizing: border-box;
 }
 
+/*/===========FIN GLOBAL RESET=======/*/
+/*/=====PROCHAINEMENT + ANIMATION=====/*/
 .next {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,4 +1016,6 @@ h3 {
   color: #FDCB46;
   margin-bottom: 3rem;
 }
+
+/*/=====FIN PROCHAINEMENT + ANIMATION=====/*/
 /*# sourceMappingURL=style.css.map */

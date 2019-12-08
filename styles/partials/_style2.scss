@@ -1,6 +1,6 @@
 @import "./_fonts.scss";
 
-//============= DEBUT GENERALITES ===============
+/*/=============== DEBUT GENERALITES ===================/*/
 
 main {
     width: 100%;
@@ -91,6 +91,7 @@ h3 {
 
 .flexPath div:nth-child(2) {
     width: 33%;
+
     @include breakpoint-phone {
         width: 100%;
     }
@@ -133,9 +134,57 @@ h3 {
     margin: 2.5rem auto;
 }
 
-//=============== FIN GENERALITES ===================
+/* Effet souligné hover sur les H3 */
+.h3-souligne {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
 
-//========= DEBUT STYLES PAGE NOTE ENCHANTEE ========
+    &:before {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0;
+        transition: width 0s ease, background-color .5s ease;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 0;
+        transition: width .5s ease;
+
+        @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:hover:before {
+        width: 100%;
+        transition: width .5s ease;
+
+        @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+    }
+
+    &:hover:after {
+        width: 100%;
+        background: transparent;
+        transition: all 0s ease;
+    }
+}
+
+/* Fin Effet souligné hover sur les H3 */
+
+/*/=============== FIN GENERALITES ===================/*/
+
+/*/========= DEBUT STYLES PAGE NOTE ENCHANTEE ========/*/
 
 .menunote {
     @extend .bg-box1;
@@ -182,7 +231,7 @@ h3 {
     }
 }
 
-//-----Styles pour les flèches-----
+/*---------------------Styles pour les flèches-------------------------*/
 
 .left-note {
     @include breakpoint-phone {
@@ -208,9 +257,11 @@ h3 {
     clip-path: polygon(47% 37%, 99% 31%, 100% 55%, 49% 58%, 0 54%, 0 28%);
 }
 
-//======== FIN STYLES PAGE NOTE ENCHANTEE =========
+/*--------------------------- Fin Styles pour les flèches--------------------*/
 
-//====== DEBUT STYLES PAGE CHIC A LA FRANCAISE ======
+/*/==================== FIN STYLES PAGE NOTE ENCHANTEE =======================/*/
+
+/*/================= DEBUT STYLES PAGE CHIC A LA FRANCAISE ===================/*/
 
 .menuchic {
     @extend .bg-box2;
@@ -229,8 +280,7 @@ h3 {
     @extend .chic;
 }
 
-
-//-----Styles pour les textes en dégradé-----
+/*-----------------Styles pour les textes en dégradé---------------------*/
 #orange-gradient [class*="col"] {
     @extend .mise-en-appetit;
 }
@@ -263,7 +313,9 @@ h3 {
     @extend .gourmandises;
 }
 
-//-----Styles pour les flèches-----
+/*-----------------Fin Styles pour les textes en dégradé---------------------*/
+
+/*-------------------------Styles pour les flèches---------------------------*/
 
 .left-appetit {
     @include breakpoint-phone {
@@ -337,9 +389,10 @@ h3 {
     @include gradient(rgb(16, 14, 143), rgb(185, 147, 190), horizontal);
 }
 
-//====== FIN STYLES PAGE CHIC A LA FRANCAISE ======
+/*-----------------------Fin Styles pour les flèches---------------------------*/
+/*/============== FIN STYLES PAGE CHIC A LA FRANCAISE ==========================/*/
 
-//====== DEBUT STYLES PAGE DELICE DES PAPILLES =====
+/*/====================== DEBUT STYLES PAGE DELICE DES PAPILLES ================/*/
 
 .menudelice {
     @extend .bg-box3;
@@ -351,7 +404,7 @@ h3 {
     font-size: 2.5rem;
 }
 
-//-----Styles pour les flèches-----
+/*------------------Styles pour les flèches------------------*/
 
 .left-commencer {
     @include gradient(blue, rgb(18, 45, 199), horizontal);
@@ -415,9 +468,10 @@ h3 {
     }
 }
 
-//======FIN STYLES PAGE DELICE DES PAPILLES======
+/*--------------------Fin Styles pour les flèches---------------------*/
+/*/======================FIN STYLES PAGE DELICE DES PAPILLES ================/*/
 
-//=======DEBUT STYLES PAGE PALETTE DU GOUT=======
+/*/==================DEBUT STYLES PAGE PALETTE DU GOUT========================/*/
 
 .menupalette {
     @extend .bg-box4;
@@ -429,7 +483,7 @@ h3 {
     font-size: 2.5rem;
 }
 
-//-----Styles pour les flèches-----
+/*--------------------------Styles pour les flèches----------------------------*/
 
 .left-esquisse {
     @include gradient(rgb(4, 119, 23), rgb(174, 243, 190), horizontal);
@@ -469,4 +523,6 @@ h3 {
     @extend .right-esquisse;
 }
 
-//=======FIN STYLES PAGE PALETTE DU GOUT=======
+/*------------------------Fin Styles pour les flèches-----------------------*/
+
+/*/==================FIN STYLES PAGE PALETTE DU GOUT========================/*/

@@ -1,0 +1,72 @@
+@import "./partials/variables";
+@import "./partials/fonts";
+@import "./partials/header";
+@import "./partials/nav";
+@import "./partials/footer";
+@import "./partials/mixins";
+@import "./partials/keyframes";
+@import "./partials/style2";
+
+/*/==========GLOBAL RESET===========/*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*/===========FIN GLOBAL RESET=======/*/
+
+/*/=====PROCHAINEMENT + ANIMATION=====/*/
+.next {
+    display: flex;
+    border: 1px solid;
+    background-color: $hfColor;
+    border-radius: 10px;
+    color: $hfTextColor;
+    width: 30%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+
+    @include breakpoint-phone {
+        width: 50%;
+    }
+
+
+    p {
+        position: relative;
+        margin-top: 0.6em;
+        overflow: hidden;
+        text-align: center;
+        white-space: nowrap;
+        animation: typewriter 5s steps(40) infinite normal both;
+    }
+}
+
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+    padding: .2rem;
+    animation: typing 5s steps(32) infinite;
+    white-space: nowrap;
+    font-family: $hfFonts;
+    font-size: 1rem;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.mablock {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid;
+    background-color: $hfColor;
+    border-radius: 10px;
+    color: $hfTextColor;
+    margin-bottom: 3rem;
+}
+
+/*/=====FIN PROCHAINEMENT + ANIMATION=====/*/

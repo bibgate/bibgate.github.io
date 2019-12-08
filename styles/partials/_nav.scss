@@ -79,7 +79,7 @@ a:hover {
     animation-iteration-count: infinite;
 }
 
-//=======BOX BACKGROUND COLORS
+/*/=======BOX BACKGROUND COLORS========/*/
 .bg-box1 {
     background-color: #FCDFDB;
 }
@@ -96,7 +96,8 @@ a:hover {
     background-color: #FDFFFD;
 }
 
-//=======CUSTOM FONTS NAVIGATION
+/*/=======FIN BOX BACKGROUND COLORS========/*/
+//=======CUSTOM FONTS NAVIGATION==========/*/
 .note {
     font-family: 'Devonshire', cursive, sans-serif;
     font-size: 1.5rem;
@@ -152,3 +153,5 @@ a:hover {
 
     @include text-gradient(right, rgb(108, 238, 173), green);
 }
+
+//=======FIN CUSTOM FONTS NAVIGATION==========/*/
