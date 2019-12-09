@@ -557,7 +557,7 @@ h3 {
   }
 }
 
-/* Effet souligné hover sur les H3 */
+/*--------------------Effet souligné hover sur les H3-------------------*/
 .h3-souligne {
   text-decoration: none;
   display: inline-block;
@@ -584,9 +584,9 @@ h3 {
   width: 0;
   -webkit-transition: width .5s ease;
   transition: width .5s ease;
-  background: #584727;
-  background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
-  background: linear-gradient(to right, #584727, #3d171d);
+  background: #07553b;
+  background: -webkit-gradient(linear, left top, right top, from(#07553b), to(#d6e4de));
+  background: linear-gradient(to right, #07553b, #d6e4de);
   position: absolute;
   right: 0;
   bottom: 0;
@@ -596,9 +596,9 @@ h3 {
   width: 100%;
   -webkit-transition: width .5s ease;
   transition: width .5s ease;
-  background: #584727;
-  background: -webkit-gradient(linear, left top, right top, from(#584727), to(#3d171d));
-  background: linear-gradient(to right, #584727, #3d171d);
+  background: #bda208;
+  background: -webkit-gradient(linear, left top, right top, from(#bda208), to(#f0e00a));
+  background: linear-gradient(to right, #bda208, #f0e00a);
 }
 
 .h3-souligne:hover:after {
@@ -608,7 +608,7 @@ h3 {
   transition: all 0s ease;
 }
 
-/* Fin Effet souligné hover sur les H3 */
+/*--------------------Fin Effet souligné hover sur les H3-------------------*/
 /*/=============== FIN GENERALITES ===================/*/
 /*/========= DEBUT STYLES PAGE NOTE ENCHANTEE ========/*/
 .menunote .h3-note {
@@ -616,6 +616,10 @@ h3 {
   font-size: 1.3rem;
   text-align: center;
   font-weight: bold;
+}
+
+.h3-note-title {
+  text-align: center;
 }
 
 .same-margin {
@@ -695,6 +699,10 @@ h3 {
 
 .chic-title {
   font-size: 1.5rem;
+}
+
+.h3-chic-title {
+  text-align: center;
 }
 
 /*-----------------Styles pour les textes en dégradé---------------------*/
@@ -816,6 +824,10 @@ h3 {
   font-size: 2.5rem;
 }
 
+.h3-delice-title {
+  text-align: center;
+}
+
 /*------------------Styles pour les flèches------------------*/
 .left-commencer, .right-commencer, .right-continuer, .right-terminer, .left-continuer, .left-terminer {
   background: blue;
@@ -907,6 +919,10 @@ h3 {
 /*/==================DEBUT STYLES PAGE PALETTE DU GOUT========================/*/
 .palette-title {
   font-size: 2.5rem;
+}
+
+.h3-palette-title {
+  text-align: center;
 }
 
 /*--------------------------Styles pour les flèches----------------------------*/

@@ -134,7 +134,7 @@ h3 {
     margin: 2.5rem auto;
 }
 
-/* Effet souligné hover sur les H3 */
+/*--------------------Effet souligné hover sur les H3-------------------*/
 .h3-souligne {
     text-decoration: none;
     display: inline-block;
@@ -159,7 +159,7 @@ h3 {
         width: 0;
         transition: width .5s ease;
 
-        @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+        @include gradient(rgb(7, 85, 59), #d6e4de, horizontal);
 
         position: absolute;
         right: 0;
@@ -170,7 +170,7 @@ h3 {
         width: 100%;
         transition: width .5s ease;
 
-        @include gradient(rgb(88, 71, 39), #3d171d, horizontal);
+        @include gradient(rgb(189, 162, 8), #f0e00a, horizontal);
     }
 
     &:hover:after {
@@ -180,7 +180,7 @@ h3 {
     }
 }
 
-/* Fin Effet souligné hover sur les H3 */
+/*--------------------Fin Effet souligné hover sur les H3-------------------*/
 
 /*/=============== FIN GENERALITES ===================/*/
 
@@ -197,6 +197,9 @@ h3 {
     }
 }
 
+.h3-note-title {
+    text-align: center;
+}
 .same-margin {
     width: 80%;
     margin: 2.5rem auto;
@@ -278,6 +281,10 @@ h3 {
     font-size: 1.5rem;
 
     @extend .chic;
+}
+
+.h3-chic-title {
+    text-align: center;
 }
 
 /*-----------------Styles pour les textes en dégradé---------------------*/
@@ -403,6 +410,9 @@ h3 {
 
     font-size: 2.5rem;
 }
+.h3-delice-title {
+    text-align: center;
+}
 
 /*------------------Styles pour les flèches------------------*/
 
@@ -481,6 +491,9 @@ h3 {
     @extend .palette;
 
     font-size: 2.5rem;
+}
+.h3-palette-title {
+    text-align: center;
 }
 
 /*--------------------------Styles pour les flèches----------------------------*/
